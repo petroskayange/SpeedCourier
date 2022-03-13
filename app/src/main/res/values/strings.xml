@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Speed Courier</string>
+    <string name="hint_resource">hello</string>
+    <string-array name="names">
+        <item></item>
+        <item>Blantyre</item>
+        <item>Lilongwe</item>
+        <item>Mangochi</item>
+        <item>Salima</item>
+        <item>Nkhotakota</item>
+        <item>Mzuzu</item>
+        <item>Kasungu</item>
+    </string-array>
+</resources>

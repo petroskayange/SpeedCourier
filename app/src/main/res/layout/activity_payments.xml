@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF2803"
+    tools:context=".Payments">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#59450D03">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:gravity="center_horizontal"
+            android:text="Payment"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottom_footer"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/submitPayment"
+        android:layout_width="119dp"
+        android:layout_height="55dp"
+        android:onClick="submitPayment"
+        android:text="Submit"
+        android:textColor="#EC5151"
+        android:textSize="16sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="393dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <EditText
+            android:id="@+id/receiveID"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Receiver Phone"
+            android:inputType="textPersonName"
+            android:textColorHint="#0D6980"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/descriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productNameText" />
+
+        <EditText
+            android:id="@+id/weightText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Weight in KG"
+            android:inputType="numberSigned|textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#0D6980"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/productNameText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toText" />
+
+        <EditText
+            android:id="@+id/productNameText"
+             android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Product Name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#0D6980"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/quantityText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightText" />
+
+        <EditText
+            android:id="@+id/quantityText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="Quantity"
+            android:inputType="textPersonName"
+            android:textColorHint="#0D6980"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/descriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productNameText" />
+
+        <EditText
+            android:id="@+id/userIDText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:hint="User ID"
+            android:inputType="textPersonName"
+            android:textColorHint="#0D6980"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/descriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productNameText" />
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#0D6980"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quantityText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="From"
+                android:textColor="#0D6980"
+                android:textColorHint="#0D6980"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="To"
+                android:textColor="#0D6980"
+                android:textColorHint="#0D6980"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="174dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ED2C2C"
+                android:prompt="@string/hint_resource"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="190dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ED2C2C"
+                android:prompt="@string/hint_resource"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalAmout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Total Amount is K0"
+            android:textColor="#FFFEFE"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="408dp"
+        android:layout_height="118dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/submitPayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="203dp"
+                android:layout_height="29dp"
+                android:text="Payment at"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/paymentAt"
+                app:layout_constraintEnd_toStartOf="@+id/textView21"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <RadioGroup
+                android:id="@+id/paymentAt"
+                android:layout_width="202dp"
+                android:layout_height="79dp"
+                app:layout_constraintBottom_toTopOf="@+id/submitPayment"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                <RadioButton
+                    android:id="@+id/dropOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="drop off"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/deliveryPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="delivery point"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:text="Payment method"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/paymentAt"
+                app:layout_constraintEnd_toStartOf="@+id/textView21"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+            <RadioGroup
+                android:id="@+id/paymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/submitPayment"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+
+
+                <RadioButton
+                    android:id="@+id/cashPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="Cash Payment"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="253dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <RadioButton
+                    android:id="@+id/ePayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="e Payment"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="220dp"
+                    tools:layout_editor_absoluteY="85dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF2803"
+    tools:context=".SingUpActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="88dp"
+            android:layout_height="97dp"
+            android:background="#CC0C0C"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/seepdc" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="168dp"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createUser"
+            android:text="SIGN UP"
+            android:textColor="#FF0000"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="238dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="710dp"
+            android:text="Already have a account? Sign In"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="338dp"
+            android:layout_height="373dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Enter Your firstame"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="272dp" />
+
+                <EditText
+                    android:id="@+id/surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Enter Surname"
+                    android:inputType="textPersonName|text"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="351dp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="430dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="509dp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="340dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="272dp" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="340dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="351dp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="340dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="430dp" />
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="340dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#F4C3C3"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="509dp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/role"
+            android:layout_width="170dp"
+            android:layout_height="87dp"
+            app:layout_constraintBottom_toTopOf="@+id/signupbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <RadioButton
+                    android:id="@+id/admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:text="Admin"
+                    android:textColor="#E8DFDF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:text="Customer"
+                    android:textColor="#E8DFDF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver"
+                    android:textColor="#E8DFDF"
+                    android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="116dp"
+            android:layout_height="29dp"
+            android:text="Type of user"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
